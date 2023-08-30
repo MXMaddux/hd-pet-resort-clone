@@ -3,12 +3,15 @@ import { FaBars, FaPhoneAlt, FaSms } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaComment, FaCalendarDays } from "react-icons/fa6";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/img/cat_dog_ball.webp";
 import logo_small from "../assets/img/cat_dog_ball_small.webp";
 import styled from "styled-components";
 import Reservations from "../pages/Reservations";
 import Contact from "../pages/Contact";
+
+
+const navigate = useNavigate();
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -110,7 +113,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="contact" onClick={<Navigate to="contact" />}>
+              <a className="nav-link" href="contact" onClick={navigate("/contact")}>
                 Contact Us
               </a>
             </li>
