@@ -1,0 +1,2 @@
+export const MODAL_OPEN = 'SIDEBAR_OPEN'
+export const MODAL_CLOSE = 'SIDEBAR_CLOSE'
