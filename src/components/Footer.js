@@ -226,6 +226,10 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .contact-card {
+    padding-top: 1rem;
+  }
   .contact-card .hours-card .request-card {
     display: block;
     width: 25%;
@@ -281,7 +285,7 @@ const Wrapper = styled.section`
   }
   .hours-card {
     border-left: 1px dashed var(--clr-primary-5);
-    padding: 0px 0.75rem;
+    padding: 1rem 0.75rem;
   }
 
   .img-tiny {
@@ -317,6 +321,7 @@ const Wrapper = styled.section`
     justify-content: center;
     width: 15rem;
     height: 100%;
+    padding-top: 1rem;
   }
   .logo-column .img-small {
     /* width: auto */
@@ -340,6 +345,9 @@ const Wrapper = styled.section`
     text-decoration: underline;
   }
   .request-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0px 0.75rem;
     border-left: 1px dashed var(--clr-primary-5);
     border-right: 1px dashed var(--clr-primary-5);
@@ -394,7 +402,7 @@ const Wrapper = styled.section`
     .request-card {
       border: none;
     }
-    .request-card a p{
+    .request-card a p {
       color: var(--clr-secondary-4);
       font-weight: 400;
       font-size: large;

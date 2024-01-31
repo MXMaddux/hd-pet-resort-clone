@@ -9,7 +9,6 @@ import Hero from "./components/Hero";
 import Welcome from "./components/Welcome";
 import Services from "./components/Services";
 import Maps from "./components/Maps";
-import Reservations from "./pages/Reservations";
 import Contact from "./pages/Contact";
 
 function App() {

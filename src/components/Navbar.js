@@ -10,12 +10,11 @@ import styled from "styled-components";
 import Reservations from "../pages/Reservations";
 import Contact from "../pages/Contact";
 
-
-const navigate = useNavigate();
-
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -113,7 +112,11 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="contact" onClick={navigate("/contact")}>
+              <a
+                className="nav-link"
+                href="contact"
+                onClick={navigate("/contact")}
+              >
                 Contact Us
               </a>
             </li>
@@ -137,9 +140,6 @@ const Navbar = () => {
               </div>
             </ModalWrapper>
           )}
-          
-            
-          
         </div>
       </div>
     </NavContainer>
@@ -481,4 +481,3 @@ const ContactModalWrapper = styled.div`
     color: var(--clr-primary-5);
   }
 `;
-
